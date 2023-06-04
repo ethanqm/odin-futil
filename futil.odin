@@ -34,6 +34,21 @@ ndo :: proc(n: int, f: $T) {
     for i:=0; i<n; i+=1 { f() }
 }
 
+add :: proc(a:$T, b:T) -> T {
+    return a+b
+}
+sub :: proc(a:$T, b:T) -> T {
+    return a-b
+}
+mul :: proc(a:$T, b:T) -> T {
+    return a*b
+}
+div :: proc(a:$T, b:T) -> T {
+    return a/b
+}
+mod :: proc(a:$T, b:T) -> T {
+    return a%b
+}
 
 @(private)
 main :: proc() {
